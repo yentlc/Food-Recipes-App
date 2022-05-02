@@ -144,3 +144,41 @@ body{
      grid-template-columns: repeat(3,1fr);
     }
 }
+
+/* meal details*/
+.meal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background: var(--basecolor);
+    
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    /* DISEÑO SCROLLBAR : Firefox */
+    scrollbar-width: none; /* lo pongo en none porque sino me hace cuadradas las esquinas*/
+    scrollbar-color: white var(--basecolor);
+    /* eso es todo el diseño que se puede hacer*/
+    padding: 2rem 0;
+    border-radius: 1rem;
+}
+
+/* DISEÑO SCROLLBAR : chrome/safari */
+.meal-details::-webkit-scrollbar{
+   width: 10px;
+}
+.meal-details::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 2rem;
+}
+
+
+/* JAVASCRIPT RELATED */
+.showRecipe{
+    display: block;
+}
+.meal-recipe-content{
+    margin: 2rem;
+}
