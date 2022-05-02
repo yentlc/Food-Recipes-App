@@ -20,4 +20,88 @@ body{
 .title,.subtitle{
     font-size: 1.6rem;
     margin-bottom: 0.85rem;
+
+}
+/* */
+.container{
+    min-height: 100vh;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+.meal-title{
+    margin: 2rem 0;
+}
+.meal-title cite{
+    font-size: 0.85rem;
+}
+.meal-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,.searchBtn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.05rem;
+    font-family: inherit;
+    outline: 0;
+    border:2px solid rgb(194,60,59);
+    color: rgb(194,60,59);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder{
+    color:rgb(194,60,59) ;
+}
+.searchBtn{
+    width: 55px;
+    height: 42px;
+    font-size: 1.5rem;
+    background: rgb(194,60,59);
+    color: white;
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: all 0.4s linear;
+    -webkit-transition: linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.searchBtn:hover{
+    background: rgb(161, 41, 41);
+}
+.meal-search-result{
+    margin-top: 4rem;
+}
+.meal-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+#image{
+    width: 100%;
+    display: block;
+}
+#name{
+    padding: 1.5rem 0.5rem;
+    font-size: 1.4rem;
+}
+.recipeBtn{
+   
+    text-decoration: none;
+    color: white;
+    background: rgb(194,60,59) ;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    display: block;
 }

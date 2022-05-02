@@ -19,15 +19,16 @@
           <blockquote>
             I cook with wine, sometimes I even add it to the food.
             <br />
-            <cite>WC Fields</cite>
+            <cite>- WC Fields</cite>
           </blockquote>
           <div class="meal-search-box">
             <input
               type="text"
               placeholder="Enter an ingredient"
               id="meal-search-input"
+              class="search-control"
             />
-            <button id="searchBtn" class="btn">
+            <button id="searchBtn" class="searchBtn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
@@ -36,7 +37,11 @@
           <h2 class="subtitle">Your Search Results:</h2>
           <div id="meals">
             <div class="meal-item">
-              <img src="" alt="" srcset="" />
+              <img
+                id="image"
+                src="/image/chips-image-example.jpg"
+                alt="meal image"
+              />
               <h3 id="name">Potato chips</h3>
               <a href="#" class="recipeBtn">Get Recipe</a>
             </div>
