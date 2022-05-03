@@ -15,6 +15,7 @@ body{
     font-weight: 350;
     font-size: 1.05rem;
     line-height:1.06;
+    background-color: whitesmoke
 }
 /* */
 .btn{
@@ -122,6 +123,16 @@ body{
 .recipeBtn:hover{
     background:  var(--hovercolor);
 }
+/*CLASE EN CASO QUE NO ENCUENTRE EL RESULTADO*/
+.notFound{
+    color: var(--basecolor);
+    font-size:1.8rem;
+    font-weight: bold;
+    grid-template-columns: 1fr!important;
+    width: 100%;
+}
+/* SOLO SE CREA CUANDO NO ENCUENTRA RECETAS EN CASO CONTRARIO BORRAMOS LA CLASE*/
+
 @media screen and (min-width:600px) {
     .meal-search-box{
         width:542px;
