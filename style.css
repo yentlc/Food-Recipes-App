@@ -7,9 +7,11 @@
     box-sizing: border-box;
 }
 :root{
-    --basecolor:rgb(194,60,59);
-    --hovercolor:rgb(161, 41, 41);
-    --contrastcolor:rgb(108, 228, 144);
+    --lightcolor:rgb(255,163,100);
+    --basecolor:rgb(252,118,67);
+    --hovercolor:rgb(219, 100, 70);
+    --darkcolor:rgb(39,50,72);
+    --contrastcolor:rgb(42, 157, 143);
 }
 body{
     font-weight: 350;
@@ -59,7 +61,7 @@ body{
     font-family: inherit;
     outline: 0;
     border:2px solid var(--basecolor);
-    color: var(--basecolor);
+    color: var(--darkcolor);
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
@@ -71,7 +73,7 @@ body{
     height: 42px;
     font-size: 1.5rem;
     background: var(--basecolor);
-    color: white;
+    color: var(--darkcolor);
     border: none;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -91,7 +93,8 @@ body{
 .meal-item{
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    background-color: white;
+    box-shadow: 0 5px 20px -10px var(--darkcolor);
     margin: 2rem 0;
 }
 #image{
@@ -109,7 +112,7 @@ body{
 .recipeBtn{
    
     text-decoration: none;
-    color: white;
+    color: var(--darkcolor);
     background: var(--basecolor) ;
     font-weight: 500;
     font-size: 1.1rem;
@@ -121,11 +124,12 @@ body{
    transition:all 0.4s linear;
 }
 .recipeBtn:hover{
-    background:  var(--hovercolor);
+    scale: 1.08;
+    transition: all 0.1s linear;
 }
 /*CLASE EN CASO QUE NO ENCUENTRE EL RESULTADO*/
 .notFound{
-    color: var(--basecolor);
+    color: var(--contrastcolor);
     font-size:1.8rem;
     font-weight: bold;
     grid-template-columns: 1fr!important;
@@ -166,7 +170,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    background: var(--basecolor);
+    background: var(--darkcolor);
     
     width: 90%;
     height: 90%;
@@ -174,13 +178,14 @@ body{
     display: none;/* cambio con javascript esto*/
     /* DISEÑO SCROLLBAR : Firefox */
     scrollbar-width: none; /* lo pongo en none porque sino me hace cuadradas las esquinas*/
-    scrollbar-color: white var(--basecolor);
+    scrollbar-color: white var(--darkcolor);
     /* eso es todo el diseño que se puede hacer*/
     padding: 2rem 0;
     border-radius: 1rem;
 }
 .meal-recipe-content p:not(.recipe-category){
-    padding: 1rem 0 ;
+    padding: 1.5rem 0;
+    text-align: justify;
 }
 /* DISEÑO SCROLLBAR : chrome/safari */
 .meal-details::-webkit-scrollbar{
@@ -221,11 +226,11 @@ body{
     padding-bottom:1rem;
 }
 .recipe-category{
-    background-color: white;
+    background-color:var(--basecolor);
     font-weight: 600;
-    color:var(--basecolor);
+    color:var(--darkcolor);
     display: inline-block;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.3rem;
 }
 .recipe-instructions{
